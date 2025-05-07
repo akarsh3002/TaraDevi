@@ -800,7 +800,6 @@
         const countryCode = contactForm
           .querySelector(".iti__selected-flag")
           .getAttribute("title");
-        console.log(countryCode);
 
         const data = {
           firstName,
@@ -845,7 +844,6 @@
         const countryCode = downloadForm
           .querySelector(".iti__selected-flag")
           .getAttribute("title");
-        console.log(countryCode);
 
         const name = downloadForm.querySelector("#name").value.split(" ");
 
@@ -855,11 +853,8 @@
           lastName = name.slice(1).join(" ");
         }
 
-        console.log(lastName);
         const email = document.getElementById("emailId").value.trim();
-        console.log(email);
         const phone = document.getElementById("phoneNumber").value.trim();
-        console.log("download form ", phone);
         const inquiry = "Brochure Downloaded!";
 
         const data = {
@@ -923,8 +918,6 @@
         const phone = form.phoneNumber.value.trim();
 
         if (name && email && phone) {
-          // Example: console.log({ name, email, phone });
-
           // Close modal
           modalB.classList.add("hidden");
 
